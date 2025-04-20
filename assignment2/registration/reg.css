@@ -1,0 +1,130 @@
+.main {
+    display: flex;
+    justify-content: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    align-items: center;
+    /* height: 70vh; */
+    /* background-color: #F2F0E8; */
+    background-image: url(img.jpg);
+    font-family: Arial, sans-serif;
+    /* width: 100%; */
+}
+
+.btn {
+    position: absolute;
+    right: 1;
+    top: 90%;
+    /* padding: 12px; */
+    /* background-color: rgb(19, 166, 147); */
+    /* color: white; */
+    /* border: 0; */
+    /* border-radius: 10px; */
+    /* font-size: 20px; */
+    /* font-weight: bolder; */
+
+}
+
+.fc {
+    margin-top: 10%;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.9;
+    /* z-index: 10; */
+    min-height: 70vh;
+    min-width: 40vw;
+    border-radius: 16px;
+    padding: 23px;
+    box-shadow: 0px 0px 40px lightblue;
+}
+
+h1 {
+    color: rgb(255, 255, 255)
+}
+
+label {
+    display: block;
+    margin: 5px 0px 5px 0px;
+}
+
+.in {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 7px;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(19, 166, 147);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bn:hover {
+    background-color: rgb(75, 211, 102);
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.google {
+    background-color: white;
+    color: #444;
+}
+
+.facebook {
+    background-color: #1877F2;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 15px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: lightblue
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    width: 60vw;
+    margin-left: 300px;
+    margin-top: 200px;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 16px 16px 16px black;
+}
+
+input {
+    width: 30vw;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(19, 166, 147);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bn:hover {
+    background-color: rgb(75, 211, 102);
+}

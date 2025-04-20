@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar with Left Search and Right Dropdown</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <ol class="nav-items">
+            <li class="dropdown">
+                <a href="/" class="dropbtn">Course Category<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li class="dropdown-sub">
+                        <a href="/">Ratings<i class="fa fa-caret-right"></i></a>
+                        <ul class="sub-dropdown-content">
+                            <li><a href="/">All</a></li>
+                            <li><a href="/">Above-5</a></li>
+                            <li><a href="/">Below-5</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-sub">
+                        <a href="/">Type<i class="fa fa-caret-right"></i></a>
+                        <ul class="sub-dropdown-content">
+                            <li><a href="/cricket">All</a></li>
+                            <li><a href="/">Free</a></li>
+                            <li><a href="/">Paid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <form role="search">
+            <input type="search" placeholder="Search" aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="course">
+        <h2>Full Stack Web Development</h2>
+        <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+        <div class="type paid">Paid</div>
+        <p>Become a full stack web developer by learning HTML, CSS, JavaScript, Node.js, and React.</p>
+    </div>
+
+    <div class="course">
+        <h2>Data Structures and Algorithms</h2>
+        <div class="rating">⭐⭐⭐⭐☆ (4.3/5)</div>
+        <div class="type paid">Paid</div>
+        <p>Master problem-solving techniques and algorithm design for coding interviews and software development.</p>
+    </div>
+
+    <div class="course">
+        <h2>Web Technology</h2>
+        <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
+        <div class="type free">Free</div>
+        <p>Understand the fundamentals of cloud computing, including IaaS, PaaS, and SaaS models.</p>
+    </div>
+
+    <div class="course">
+        <h2>Introduction to Python</h2>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
+        <div class="type free">Free</div>
+        <p>This course covers the basics of Python programming including syntax, data types, loops, and functions.</p>
+    </div>
+
+
+    </div>
+</body>
+
+</html>

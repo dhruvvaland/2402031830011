@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body class="main">
+    <div>
+        <form id="userForm" className="fc">
+            <div>
+                <h1>Fill Details</h1>
+                <hr>
+                </hr>
+            </div>
+            <div>
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" placeholder="Enter FullName" class="in" />
+
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Email" class="in" />
+
+            </div>
+            <div>
+                <label for="number">Phone Number:-</label>
+                <input type="number" id="number" placeholder="Enter Phone Number" class="in" />
+            </div>
+            <div>
+                <label for="uname">UserName:</label>
+                <input type="text" id="uname" placeholder="Enter UserName" class="in" />
+
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter Password" class="in" />
+            </div>
+            <div>
+                <label class="header">Profile Photo:</label>
+                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture class="in" />
+            </div>
+
+            <button type="submit" class="bn">Submit</button>
+
+            <div class="login-options">
+                <a href="/" class="login-btn google">
+                    <img src="logo.jpg" alt="Google Logo" />
+                    Login with Google
+                </a>
+
+                <a href="/" class="login-btn facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook Logo" />
+                    Login with Facebook
+                </a>
+            </div>
+        </form>
+    </div>
+    <button type="button" class="btn bn">Login</button>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #333;
+}
+
+.nav {
+    margin-bottom: 8px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items li {
+    position: relative;
+}
+
+.nav-items a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Sub-dropdown styles */
+.dropdown-sub {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-sub:hover .sub-dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover Effects */
+.nav a:hover,
+.dropdown:hover>a {
+    background-color: red;
+}
+
+form[role="search"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 400px;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d11c1c;
+    border-radius: 8px;
+    outline: none;
+}
+
+form button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+.course-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.course h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.course .rating {
+    color: #FFD700;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.course .type {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.course .type.free {
+    background-color: #4CAF50;
+}
+
+.course .type.paid {
+    background-color: #f44336;
+}
+
+.course p {
+    margin: 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-items {
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+    }
+
+
+    .nav-items li {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+
+    .sub-dropdown-content {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
